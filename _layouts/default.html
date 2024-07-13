@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+{% include head.html %}
+
+<body>
+  <div id="navbar-mobile">
+    <h4 class="navbar-mobile-heading">Menu</h4>
+    {% include navigation.html %}
+  </div>
+  <main>
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+    {% include google-analytics.html %}
+
+    <div class="main-overlay"></div>
+
+  </main>
+  <script type="text/javascript">
+    // nav toggle
+    $('.navbar-toggler').on('click', () => {
+        $('body').toggleClass('nav-open')
+    });
+
+    $('#navbar-mobile ul li a, .main-overlay').on('click', () => {
+      $('body').removeClass('nav-open');
+    });
+  </script>
+  {% include slider_scripts.html %}
+</body>
+
+</html>

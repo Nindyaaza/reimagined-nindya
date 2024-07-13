@@ -1,0 +1,18 @@
+- selector: about_slider
+  images:
+    - src: /img/MadaldnElleseBBB.jpg
+      alt: Ellese
+    - src: /img/TomGoalBBB.jpg
+      alt: Tom
+    - src: /img/FredSheeranBBB.jpg
+      alt: Freddy
+    - src: /img/NicoBBB.jpg
+      alt: Nico
+    - src: /img/BlagiStanBBB.jpg
+      alt: Stan
+    - src: /img/MigAleBBB.jpg
+      alt: Mig
+      
+  settings:
+    height: "'auto'"
+    effect: "'fade'"
